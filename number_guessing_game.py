@@ -28,7 +28,7 @@ def start_game():
                 elif answer < random_number:
                     print("It's higher!")
                        
-        if input("Do you want to play again? y[es] or n[o] ").lower() == 'y':
+        if input("Do you want to play again? [y]es or [n]o ").lower() == 'y':
             #print(attempts)
             print("The HIGHEST SCORE is {} attempts".format(highest_score))
             continue
@@ -51,7 +51,7 @@ while True:
            3. Continue to make a guess until you get the correct answer
            
     """)
-    if input("Do you want to give it a try? y[es] or n[o] ") == 'y':
+    if input("Do you want to give it a try? [y]es or [n]o ") == 'y':
         start_game()
     else:
         break
